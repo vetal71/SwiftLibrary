@@ -6,8 +6,8 @@
 			<Base>True</Base>
 			<Config Condition="'$(Config)'==''">Debug</Config>
 			<Platform>Win32</Platform>
-			<AppType>Application</AppType>
-			<FrameworkType>VCL</FrameworkType>
+			<AppType>Console</AppType>
+			<FrameworkType>None</FrameworkType>
 			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -43,9 +43,6 @@
 			<DelphiCompile Include="SwiftLibrary.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="FMain.pas">
-				<Form>Form3</Form>
-			</DCCReference>
 			<DCCReference Include="Model\uSwiftModel.pas"/>
 			<BuildConfiguration Include="Debug">
 				<Key>Cfg_2</Key>

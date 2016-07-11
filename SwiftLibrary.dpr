@@ -1,15 +1,16 @@
 program SwiftLibrary;
 
+{$APPTYPE CONSOLE}
+
 uses
-  Forms,
-  FMain in 'FMain.pas' {Form3},
+  SysUtils,
   uSwiftModel in 'Model\uSwiftModel.pas';
 
-{$R *.res}
-
 begin
-  Application.Initialize;
-  Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm3, Form3);
-  Application.Run;
+  try
+    { TODO -oUser -cConsole Main : Insert code here }
+  except
+    on E: Exception do
+      Writeln(E.ClassName, ': ', E.Message);
+  end;
 end.
